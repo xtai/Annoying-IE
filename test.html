@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Annoying IE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Annoying IE">
+    <meta name="author" content="Xiaoyu Tai">
+    <style>
+      html,body{height: 100%;}
+      #iee{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+      }
+      #iee-up{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 62%;
+        background-color: #333;
+        z-index: 20;
+      }
+      #iee-down{
+        position: absolute;
+        top: 62%;
+        left: 0px;
+        width: 100%;
+        height: 38%;
+        background-color: #CCC;
+        z-index: 20;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--[if IE]>用的时候放进来呀!<![endif]-->
+      <div id="iee">
+        <div id="iee-up" style="text-align: center; overflow: hidden;">
+          <div style="position: relative; top: 10%;">
+            <img style="width: 30%; max-width: 400px;" src="img/forgetie.png" alt="别傻看着了，赶快换浏览器啊！"/>
+            <img style="width: 70%; max-width: 700px;" src="img/forgetie-text.png" alt="你绝对无法想象我花了多长时间调试这个专门为IE设置的界面！！！" />
+          </div>
+        </div>
+        <div id="iee-down" style="text-align: center;">
+          <div style="position: relative; top: 10%;">
+            <img style="width: 70%; max-width: 400px;" src="img/forgetie-text2.png" alt="试试能死呀！！！"/>
+            <a href="http://www.google.com/chrome"><img style="width: 50%; max-width: 200px;" src="img/chrome.png" alt="Chrome" /></a>
+            <a href="http://firefox.com"><img style="width: 50%; max-width: 200px;" src="img/firefox.png" alt="FireFox" /></a>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
